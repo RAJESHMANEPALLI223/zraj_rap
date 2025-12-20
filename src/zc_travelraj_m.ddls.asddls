@@ -1,6 +1,8 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'CONSUMPTION VIEW FOR THE TRAVEL'
 @Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
+
 define root view entity ZC_TRAVELRAJ_M  provider contract transactional_query as projection on ZI_TRAVELRAJ_M
 {
     key TravelId,

@@ -1,0 +1,5 @@
+CLASS zbp_booking_suppraj_m DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_travelraj_m.
+ENDCLASS.
+
+CLASS zbp_booking_suppraj_m IMPLEMENTATION.
+ENDCLASS.

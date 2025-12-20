@@ -1,6 +1,7 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'BOOKING SUPLEMENT CONSUMPTION  VIEW'
 @Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
 define view entity ZC_BOOK_SUPPRAJ_M as projection on ZI_BOOK_SUPPRAJ_M
 {
     key TravelId,

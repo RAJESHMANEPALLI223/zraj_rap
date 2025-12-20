@@ -1,6 +1,8 @@
 @AccessControl.authorizationCheck: #NOT_REQUIRED
 @EndUserText.label: 'CONSUMPTION VIEW FOR THE BOOKING'
 @Metadata.ignorePropagatedAnnotations: true
+@Metadata.allowExtensions: true
+
 define view entity ZC_BOOKINGRAJ_M as projection on ZI_BOOKINGRAJ_M
 {
     key TravelId,

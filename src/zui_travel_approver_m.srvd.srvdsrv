@@ -1,0 +1,5 @@
+@EndUserText.label: 'SERVICE DEFINATION FOR THE APPROVER'
+define service ZUI_TRAVEL_APPROVER_M {
+  expose ZC_TRAVEL_APPROVE_M;
+  expose ZC_BOOKING_APPROVE_M;
+}
