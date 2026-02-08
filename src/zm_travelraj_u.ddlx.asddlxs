@@ -1,0 +1,68 @@
+@Metadata.layer: #CORE
+@UI : { headerInfo : { typeName: 'Travel',
+                       typeNamePlural: 'Travels',
+                       title : { type: #STANDARD,
+                                 value: 'TravelId' } } }
+annotate entity ZC_TRAVELRAJ_U
+    with 
+{
+@UI.facet: [{ id : 'Travel',
+              type: #IDENTIFICATION_REFERENCE,
+              purpose: #STANDARD,
+              label: 'Travel',
+              position: 10  },
+              { id: 'Booking',
+                purpose: #STANDARD,
+                type: #LINEITEM_REFERENCE,
+                label: 'Booking',
+                position: 20,
+                targetElement: '_booking' }]
+   @UI: { lineItem:       [ { position: 10,
+                             importance: #HIGH } ],
+         identification: [ { position: 10 } ],
+         selectionField: [ { position: 10 } ] }
+    TravelId;
+     @UI: { lineItem:       [ { position: 20,
+                             importance: #HIGH } ],
+         identification: [ { position: 20 } ],
+         selectionField: [ { position: 20 } ] }
+    AgencyId;
+     @UI: { lineItem:       [ { position: 30,
+                             importance: #HIGH } ],
+         identification: [ { position: 30 } ],
+         selectionField: [ { position: 30 } ] }
+    CustomerId;
+   @UI: { lineItem:       [ { position: 40,
+                              importance: #MEDIUM } ],
+         identification: [ { position: 40 } ] }
+    BeginDate;
+    @UI: { lineItem:       [ { position: 41,
+                              importance: #MEDIUM } ],
+         identification: [ { position: 41 } ] }
+    EndDate;
+     @UI: { identification: [ { position: 42 } ] }
+    BookingFee;
+     @UI: { identification: [ { position: 43 } ] }
+    TotalPrice;
+  @UI: { identification:[ { position: 45,
+                            label: 'Comment' } ] }
+    Description;
+    
+  @UI: { lineItem:      [ { position: 50,
+                            importance: #HIGH }],
+    identification: [ { position: 46, label: 'Travel Status' } ],
+         selectionField: [{ position: 40 }] }
+    Status;
+    @UI.hidden: true
+    StatusText;
+    @UI.hidden: true
+    Createdby;
+    @UI.hidden: true
+    Createdat;
+    @UI.hidden: true
+    Lastchangedby;
+    @UI.hidden: true
+    Lastchangedat;
+  
+    
+}

@@ -4,6 +4,7 @@
 @Metadata.allowExtensions: true
 
 define view entity ZC_BOOKINGRAJ_M as projection on ZI_BOOKINGRAJ_M
+
 {
     key TravelId,
     key BookingId,

@@ -21,9 +21,13 @@ association [1..1] to /DMO/I_Overall_Status_VH as _status on $projection.Overall
     ztravelraj_m.currency_code as CurrencyCode,
     ztravelraj_m.description as Description,
     ztravelraj_m.overall_status as OverallStatus,
+    @Semantics.user.createdBy: true
     ztravelraj_m.created_by as CreatedBy,
+    @Semantics.systemDateTime.createdAt: true
     ztravelraj_m.created_at as CreatedAt,
+    @Semantics.user.localInstanceLastChangedBy: true
     ztravelraj_m.last_changed_by as LastChangedBy,
+    @Semantics.systemDateTime.localInstanceLastChangedAt: true
     ztravelraj_m.last_changed_at as LastChangedAt,
     _BOOKING,
     _AGENCY,
